@@ -10,7 +10,6 @@ import java.util.Optional;
 public interface CrudDAO<T extends SuperEntity, ID extends Serializable> {
 
     long count() throws Exception;
-
     T save(T entity) throws Exception;
 
     void update(T entity) throws Exception;
