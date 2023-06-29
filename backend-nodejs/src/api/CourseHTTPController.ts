@@ -1,7 +1,10 @@
 import express from "express";
+import {dataSource} from "../db/dbcp";
 
 
 export const router = express.Router();
+
+//console.log(dataSource);
 
 router.get('/', (req, res) => {
     res.send("<h1>Get All Books</h1>");
