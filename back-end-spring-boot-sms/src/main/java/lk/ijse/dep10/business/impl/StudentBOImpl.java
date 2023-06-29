@@ -31,14 +31,14 @@ public class StudentBOImpl implements StudentBO {
 
     @Override
     public void saveStudent(StudentDTO studentDTO) throws Exception {
-        if (studentDAO.existsById(studentDTO.getId() + "")) {
+        if (studentDAO.existsById(studentDTO.getId()+"")) {
             throw new DuplicateRequestException(studentDTO.getId() + " already exists");
         }
         studentDAO.save(transformer.toStudentEntity(studentDTO));
     }
 
     @Override
-    public void deleteStudent(int StudentId) throws Exception {
+    public void deleteStudent(String StudentId) throws Exception {
 
     }
 }

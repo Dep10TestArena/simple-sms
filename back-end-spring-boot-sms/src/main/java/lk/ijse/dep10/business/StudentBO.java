@@ -13,6 +13,6 @@ public interface StudentBO {
 
     void saveStudent(StudentDTO studentDTO) throws Exception;
 
-    void deleteStudent(int StudentId) throws Exception;
+    void deleteStudent(String StudentId) throws Exception;
 
 }
