@@ -1,4 +1,4 @@
-package lk.ijse.dep10.backendspringbootsms;
+package lk.ijse.dep10;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
